@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Adding content with document.createElement</title>
+    
+    <style>
+      .bar {background: gray; height: 20px; margin: 10px; color: white;}
+    </style>
+  </head>
+  <body>
+    <h1>Adding content with document.createElement</h1>
+    
+    <div id="k1">Kata 1: Display numbers 1-20</div>
+    <div id="k2">Kata 2: Display even numbers 1-20</div>
+    <div id="k3">Kata 3. Display odd numbers 1-20</div>
+    <div id="k4">Kata 4. Display multiples of 5 to 100</div>
+    <div id="k5">Kata 5. Display square numbers to 100</div>
+    <div id="k6">Kata 6. Display numbers backwards 20-1</div>
+    <div id="k7">Kata 7. Display even numbers backward from 20</div>
+    <div id="k8">Kata 8. Display odd numbers backward 20-1</div>
+    <div id="k9">Kata 9. Display multiples of 5 counting down from 100</div>
+    <div id="k10">Kata 10. Display square numbers, counting down from 100.</div>
+    <div id="k11">Kata 11. Display the 20 elements of sampleArray</div>
+    <div id="k12">Kata 12. Display all even numbers in sampleArray</div>
+    <div id="k13">Kata 13. Display all odd numbers in sampleArray</div>
+    <div id="k14">Kata 14. Display square of each element in sampleArray</div>
+    <div id="k15">Kata 15. Display sum of all numbers 1-20</div>
+    <div id="k16">Kata 16. Display sum of all elements in sampleArray</div>
+    <div id="k17">Kata 17. Display smallest element in sampleArray</div>
+    <div id="k18">Kata 18. Display largest element in sampleArray</div>
+    <div id="k19">Kata 19. Display 20 solid gray rectangles, each 20px high, 100px wide</div>
+    <div id="k20">Kata 20. Display 20 solid gray rectangles, 20 px high, widths ranging evenly from 105 px to 200px</div>
+    <div id="k21">Kata 21. Display 20 solid gray rectangles, 20 px high, widths in pixels given by the 20 element of sampleArray</div>
+    <div id="k22">Kata 22. Same as 21, but alternate so that every other rectangle is red</div>
+    <div id="k23">Kata 23. Same as 21, but color the rectanges with even widths red</div>
+    <script src="mycode.js"></script>
+   
+    <!-- <script>
+      for(i=1; i<=3; i++) {
+        // Create a div, with class "bar", and set the width to 100px.
+        var newElement = document.createElement("div");
+        newElement.className = "bar";
+        newElement.style.width = i*100 + "px";
+
+        // Place a text label inside the new div.
+        var newText = document.createTextNode("Bar #" + i);
+        newElement.appendChild(newText);
+
+        // Put the new div on the page inside the existing element "d1".
+        var destination = document.getElementById("d1");
+        destination.appendChild(newElement);
+
+
+      }
+    </script> -->
+  </body>
+</html>
