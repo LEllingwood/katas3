@@ -200,6 +200,7 @@ function k13() {
 }
 
 k13()
+
 // kata 14
 function k14() {
     let destination = document.getElementById("k14");
@@ -295,6 +296,7 @@ function k20() {
     for (let i = 0; i <= 20; i++) {
         let newK19 = document.createElement("div");
         newK19.style.width = 100 + "px";
+       
         newK19.style.height = 20 + "px";
         newK19.style.backgroundColor = "gray";
         destination.appendChild(document.createElement("br"));
@@ -302,5 +304,100 @@ function k20() {
         destination.appendChild(newK20);
     }
 }
+k19()
 
-k20()
+// kata 20
+function k20() {
+    
+    let destination = document.getElementById("k20");
+  
+    for (let i = 105; i <= 200; i+=5) {
+        let newK20 = document.createElement("div");
+        newK20.style.width = i + "px";
+        newK20.style.height = 20 + "px";
+        newK20.style.backgroundColor = "gray";
+        destination.appendChild(document.createElement("br"));
+  
+        destination.appendChild(newK20);
+    }
+}
+k20()   
+
+
+// // kata 21
+
+function k21() {
+    let destination = document.getElementById("k21");
+    
+    for (let i = 0; i <= sampleArray.length; i++) {
+        let newK21 = document.createElement("div");
+        newK21.style.width = sampleArray[i] + "px";
+        newK21.style.height = 20 + "px";
+        newK21.style.backgroundColor = "gray";
+        destination.appendChild(document.createElement("br"));
+  
+        destination.appendChild(newK21);
+    }
+}
+
+k21()
+
+// // kata 22
+
+/function k21() {
+    let destination = document.getElementById("k21");
+    
+    for (let i = 0; i <= sampleArray.length; i++) {
+        let newK21 = document.createElement("div");
+        newK21.style.width = sampleArray[i] + "px";
+        newK21.style.height = 20 + "px";
+        newK21.style.backgroundColor = "gray";
+        destination.appendChild(document.createElement("br"));
+  
+        destination.appendChild(newK21);
+    }
+}
+
+k21()
+
+
+
+// function k13() {
+//     let destination = document.getElementById("k13");
+//     let newK13 = document.createElement("p");
+    
+//     for (let i = 0; i < 19; i++) {
+//     if (sampleArray[i]%2 !== 0)
+   
+//         newK13.appendChild(document.createTextNode(sampleArray[i]+", "));
+//     }
+
+//     removeComma(newK13);
+//     destination.appendChild(newK13);
+// }
+
+// k13()
+
+
+
+
+
+
+
+// kata 23
+// function k23() {
+//     let destination = document.getElementById("k23");
+    
+//     for (let i = 0; i <= 20; i++) {
+//         let newK23 = document.createElement("div");
+//         newK23.style.width = 100 + "px";
+//         // http://help.dottoro.com/ljpaivpk.php
+       
+//         newK23.style.height = 20 + "px";
+//         newK23.style.backgroundColor = "gray";
+//         destination.appendChild(document.createElement("br"));
+  
+//         destination.appendChild(newK23);
+//     }
+// }
+// kata23()
