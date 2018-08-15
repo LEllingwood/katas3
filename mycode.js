@@ -276,7 +276,7 @@ k18()
 function k19() {
     let destination = document.getElementById("k19");
     
-    for (let i = 0; i <= 20; i++) {
+    for (let i = 0; i < 20; i++) {
         let newK19 = document.createElement("div");
         newK19.style.width = 100 + "px";
         newK19.style.height = 20 + "px";
