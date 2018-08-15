@@ -272,7 +272,7 @@ function k18() {
 }
 k18()
 
-// kata 19
+// kata 19 display 20 gray rectangles, each 20 px high and 100 px wide
 function k19() {
     let destination = document.getElementById("k19");
     
@@ -289,24 +289,7 @@ function k19() {
 
 k19()
 
-// kata 20
-function k20() {
-    let destination = document.getElementById("k20");
-    
-    for (let i = 0; i <= 20; i++) {
-        let newK19 = document.createElement("div");
-        newK19.style.width = 100 + "px";
-       
-        newK19.style.height = 20 + "px";
-        newK19.style.backgroundColor = "gray";
-        destination.appendChild(document.createElement("br"));
-  
-        destination.appendChild(newK20);
-    }
-}
-k19()
-
-// kata 20
+// kata 20 display 20 solid gray rectangles, each 20 px high and 100 px wide.
 function k20() {
     
     let destination = document.getElementById("k20");
@@ -324,12 +307,12 @@ function k20() {
 k20()   
 
 
-// // kata 21
+// // kata 21 display 20 solid gray rectangles, each 20 p high with width in pixels given by the 20 elements of sampleArray
 
 function k21() {
     let destination = document.getElementById("k21");
-    
     for (let i = 0; i <= sampleArray.length; i++) {
+    
         let newK21 = document.createElement("div");
         newK21.style.width = sampleArray[i] + "px";
         newK21.style.height = 20 + "px";
@@ -342,62 +325,56 @@ function k21() {
 
 k21()
 
-// // kata 22
+// // kata 22 as in 21, but alternate colors so that every other rectangle is red.
 
-/function k21() {
-    let destination = document.getElementById("k21");
+function k22() {
+    let destination = document.getElementById("k22");
     
     for (let i = 0; i <= sampleArray.length; i++) {
-        let newK21 = document.createElement("div");
-        newK21.style.width = sampleArray[i] + "px";
-        newK21.style.height = 20 + "px";
-        newK21.style.backgroundColor = "gray";
+        let newK22 = document.createElement("div");
+        newK22.style.width = sampleArray[i] + "px";
+        newK22.style.height = 20 + "px";
+
+
+         if (i%2 !== 0) {
+            newK22.style.backgroundColor = "red";
+         }
+         else {
+            newK22.style.backgroundColor = "gray";
+        }
+        
         destination.appendChild(document.createElement("br"));
-  
-        destination.appendChild(newK21);
+        destination.appendChild(newK22);
+
     }
 }
 
-k21()
+k22()
 
+// kata 23 as in 21, but color the rectangles with even widths red.
 
-
-// function k13() {
-//     let destination = document.getElementById("k13");
-//     let newK13 = document.createElement("p");
+function k23() {
+    let destination = document.getElementById("k23");
+    for (let i = 0; i <= sampleArray.length; i++) {
     
-//     for (let i = 0; i < 19; i++) {
-//     if (sampleArray[i]%2 !== 0)
-   
-//         newK13.appendChild(document.createTextNode(sampleArray[i]+", "));
-//     }
+        let newK23 = document.createElement("div");
+        newK23.style.width = sampleArray[i] + "px";
+        newK23.style.height = 20 + "px";
+        newK23.style.backgroundColor = "gray";
 
-//     removeComma(newK13);
-//     destination.appendChild(newK13);
-// }
+ 
+        if (sampleArray[i] %2 !== 0) {
+            console.log(sampleArray[i])
+            newK23.style.backgroundColor = "gray";
+         }
+         else {
+            newK23.style.backgroundColor = "red";
+        }       
 
-// k13()
+        destination.appendChild(document.createElement("br"));
+        
+        destination.appendChild(newK23);
+    }
+}
 
-
-
-
-
-
-
-// kata 23
-// function k23() {
-//     let destination = document.getElementById("k23");
-    
-//     for (let i = 0; i <= 20; i++) {
-//         let newK23 = document.createElement("div");
-//         newK23.style.width = 100 + "px";
-//         // http://help.dottoro.com/ljpaivpk.php
-       
-//         newK23.style.height = 20 + "px";
-//         newK23.style.backgroundColor = "gray";
-//         destination.appendChild(document.createElement("br"));
-  
-//         destination.appendChild(newK23);
-//     }
-// }
-// kata23()
+k23()
